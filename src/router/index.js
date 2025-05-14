@@ -2,6 +2,7 @@ import RobotBuilder from "@/build/RobotBuilder.vue";
 import HomePage from "@/home/HomePage.vue";
 import PartInfo from "@/parts/PartInfo.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
+import QRCode from "@/build/QRCode.vue";
 
 export default createRouter({
     history: createWebHashHistory(),
@@ -9,6 +10,10 @@ export default createRouter({
         path:'/',
         name:'ГЛАВНАЯ',
         component:HomePage,
+    },{
+        path:'/qrcode',
+        name:'QR CODE',
+        component:QRCode
     },{
         path:'/build',
         name:'КОНСТРУКТОР',
